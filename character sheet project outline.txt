@@ -1,0 +1,141 @@
+DiceRoller
+- roll(x)
+-- rolls dice in range 
+-- accepts modifiers, based on int input or skill value
+
+- multi-roll(args)
+-- accepts modifiers, based on int input or skill value
+-- roll all dice specified in line
+-- print each roll separately 
+
+- saving_throw(ability)
+-- roll saving throw based on ability
+
+- attack(count=None, bonus=None)
+-- display menu of attacks available
+-- roll dice based on attack
+
+- death_save
+-- modify combat.death_saves
+
+- advantage
+-- account for advantage
+
+- disadvantage
+-- account for disadvantage
+
+
+CharacterSheet
+- basics(name)
+-- prints menu of names from file, allows selection, prints/modifies the following
+-- class
+-- level
+-- race
+-- background
+-- alignment
+
+- abilities(ability, value=None)
+-- if value None, print ability score
+-- if value change ability score
+-- calculate modifiers based on ability
+
+- saving_throws(ability)
+-- stores data by ability calculated on skills
+-- rolls with modifier from ability
+
+- skills(skill, proficient, value=None)
+-- stores skill and value
+-- calculate base skills from ability
+-- considers proficiency
+
+- proficiency
+-- stores bonus value
+-- allow custom proficiency values(thieves tools, etc)
+
+- health(value=None, max=None)
+-- store hit point maximum
+-- store hit dice information
+-- temporary health
+-- if value, set value
+-- if max, set maximum
+
+- perception
+-- store and calculate perception
+
+- armor_class
+-- store/modify armor class value
+
+- initiative
+-- store initiative value
+
+- speed
+- store speed value
+
+
+Combat
+- attacks(print=None)
+-- stores attack, attack bonus, damage
+-- print stats on request
+
+- weapons(print=None)
+-- store weapon name, damage, and properties
+-- prints stats on request
+
+- spells(print=None)
+-- store spell name, damage, and properties
+-- prints stats on request
+
+- hit_points(value=None)
+-- stores temporary hit points during combat
+
+- death_saves
+-- tracks success and failure count
+
+
+Inventory
+- cash(type=None, value=None)
+-- track current cash
+-- print/modify cash
+-- calculate count of different types 
+
+- weapons
+-- store and modify weapon information
+
+- armor
+-- store and modify armor information
+
+- equiptment
+-- store/modify equiptment type and count
+
+Features
+- personality traits
+-- store personality trait data based on input
+
+- ideals
+-- store ideals trait data based on input
+
+- bonds
+-- store bonds trait data based on input
+
+- flaws
+-- store flaws trait data based on input
+
+- features
+-- store feature data based on input
+
+- traits
+-- store trait data based on input
+
+
+Menu
+- build
+-- build menus for all of the things
+
+
+
+
+
+
+
+
+
